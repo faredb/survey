@@ -72,7 +72,7 @@ html {
 
 body {
   background: #9fa8a3;
-  margin: 10px 50px;
+  margin: 10px 10px 0px 10px;
   line-height: 1.4;
 }
 h1 {
@@ -113,11 +113,13 @@ img {
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 0px;
 }
 @media only screen and (max-width: 880px) {
   .main-nav ul {
     display: block;
     padding-top: 10px;
+
 
   }
 }
@@ -126,17 +128,19 @@ img {
   background: var(--primary);
   display: block;
   text-decoration: none;
-  padding: 0.8rem;
+  padding: 0.9 rem;
   text-align: center;
   color: var(--dark);
   text-transform: uppercase;
   font-size: 1.1rem;
   box-shadow: var(--shadow);
   border-radius: 5px;
+margin: 5px;
 }
 @media only screen and (max-width: 880px) {
 .main.nav a{
-font-size: 0.7rem;;
+font-size: 0.7rem;
+
 }
 }
 
@@ -166,9 +170,21 @@ font-size: 0.7rem;;
       "topbox-b topbox-b";
     text-align: center;
   }
-
-
 }
+@media only screen and (max-width: 700px) {
+  .container-top {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "form-header"
+      "form-header"
+      "topbox-a"
+      "topbox-b";
+    text-align: center;
+  }
+}
+
+
 /* Form-header */
 .form-header {
   grid-area: form-header;
@@ -219,6 +235,15 @@ font-size: 0.7rem;;
   grid-gap: 10px;
   text-align: left;
 }
+@media only screen and (max-width: 700px) {
+.form{
+display: block;
+
+}
+
+
+}
+
 .inputname {
   grid-area: inputname;
 }
@@ -271,6 +296,16 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+.bookagain{
+  display:block;
+  margin: 5px;
+}
+.box{
+  margin: 5px;
+}
 }
 
 .box {
