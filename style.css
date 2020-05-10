@@ -114,6 +114,13 @@ img {
   list-style: none;
   grid-template-columns: repeat(5, 1fr);
 }
+@media only screen and (max-width: 880px) {
+  .main-nav ul {
+    display: block;
+    padding-top: 10px;
+
+  }
+}
 
 .main-nav a {
   background: var(--primary);
@@ -126,6 +133,11 @@ img {
   font-size: 1.1rem;
   box-shadow: var(--shadow);
   border-radius: 5px;
+}
+@media only screen and (max-width: 880px) {
+.main.nav a{
+font-size: 0.7rem;;
+}
 }
 
 .main-nav a:hover {
@@ -143,7 +155,20 @@ img {
     "form-header form-header topbox-b";
   text-align: center;
 }
+@media only screen and (max-width: 880px) {
+  .container-top {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "form-header form-header"
+      "form-header form-header"
+      "topbox-a topbox-a"
+      "topbox-b topbox-b";
+    text-align: center;
+  }
 
+
+}
 /* Form-header */
 .form-header {
   grid-area: form-header;
